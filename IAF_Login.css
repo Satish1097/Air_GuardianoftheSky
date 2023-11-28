@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background: url(image/b1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .page{
+    height: 90vh;
+    width: 75%;
+    position: absolute;
+    display: flex;
+    margin: 4vh 0 0 12.5%;
+
+}
+.main .page .login{
+    width: 50%;
+    height: 100%;
+    background-color: #ffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.main .page .login header{
+    display: none;
+}
+.main .page .login h1{
+    margin-top: 15%;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.main .page .login p{
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+.main .page .login input{
+    width: 90%;
+    height: 45px;
+    margin-left: 5%;
+    border-radius: 7px;
+    font-size: 16px;
+
+}
+.main .page .login .capt{
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    display: flex;
+}
+.main .page .login .capt input{
+    width: 180px;
+    height: 45px;
+    margin-top: 15px;
+    font-size: 16px;
+    outline: none;
+}
+.main .page .login .capt img{
+    width: 180px;
+    height: 45px;
+    margin-top: 15px;
+}
+.main .page .login .capt button{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.main .page .login .forgot{
+    height: 10%;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.main .page .login .forgot a{
+    text-decoration: none;
+    color: #008cf3;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.main .page .login .forgot a:hover{
+    color: #14214e;
+}
+
+.main .page .login .forgot button{
+    height: 45px;
+    width: 250px;
+    margin-top: 10px;
+    background-color: #14213e;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.main .page .login #note{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+
+.main .page .logo{
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #14213e;
+}
+.main .page .logo img{
+    margin:30% 0 0 35%;
+}
+.main .page .logo h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #ffff;
+    font-weight: 600;
+    margin-left: 20%;
+}
+.main .page .logo button{
+    height: 50px;
+    width: 110px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5% 0 0 37%;
+    background-color: #14214e;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+}
+/*===========================================Media query=====================*/
+@media screen 
+  and (max-device-width: 390px){.main{
+    height: 100vh;
+    overflow: hidden;
+}
+.main .page{
+    display: block;
+    height: 80vh;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+}
+.main .page .login{
+    width: 100%;
+}
+.main .page .login header{
+    display: block;
+    height: 8vh;
+    background-color: #14214e;
+    display: flex;
+}
+.main .page .login header .l{
+    height: 100%;
+    width: 15%;
+    margin-left: 25%;
+}
+.main .page .login header .l img{
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+}
+.main .page .login header .text{
+    height: 100%;
+    width: 50%;
+    margin-left: 5%;
+}
+.main .page .login header .text h2{
+    margin-top: 20px;
+    color: #fff;
+    font-family: Arial;
+    
+}
+
+
+.main .page .login h1{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main .page .logo{
+    z-index: -2;
+    width: 100%;
+    position: absolute;
+}
+.main .page .login .capt img{
+    width: 100px;
+}
+.main .page .login .capt input{
+    width: 100px;
+}
+.main .page .login .forgot a{
+    letter-spacing: 0px;
+    font-size: 14px;
+}
+.main .page .login .forgot button{
+    width: 120px;
+}
+}
